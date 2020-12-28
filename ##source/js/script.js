@@ -22,61 +22,73 @@
 
 
 // // Задача № 3
-// let arr = [{
+// let arr = [
+// 	{
 // 		firstName: "Имя 1",
 // 		lastName: "Фамилия 1",
-// 		age: 14
+// 		age: 14,
 // 	},
 // 	{
 // 		firstName: "Имя 2",
 // 		lastName: "Фамилия 2",
-// 		age: 15
+// 		age: 15,
 // 	},
 // 	{
 // 		firstName: "Имя 3",
 // 		lastName: "Фамилия 3",
-// 		age: 16
+// 		age: 16,
 // 	},
 // 	{
 // 		firstName: "Имя 4",
 // 		lastName: "Фамилия 4",
-// 		age: 17
+// 		age: 17,
 // 	},
 // 	{
 // 		firstName: "Имя 5",
 // 		lastName: "Фамилия 5",
-// 		age: 18
+// 		age: 18,
 // 	},
 // 	{
 // 		firstName: "Имя 6",
 // 		lastName: "Фамилия 6",
-// 		age: 19
+// 		age: 19,
 // 	},
 // 	{
 // 		firstName: "Имя 7",
 // 		lastName: "Фамилия 7",
-// 		age: 20
+// 		age: 20,
 // 	},
 // 	{
 // 		firstName: "Имя 8",
 // 		lastName: "Фамилия 8",
-// 		age: 21
+// 		age: 21,
 // 	},
 // 	{
 // 		firstName: "Имя 9",
 // 		lastName: "Фамилия 9",
-// 		age: 22
+// 		age: 22,
 // 	},
 // 	{
 // 		firstName: "Имя 10",
 // 		lastName: "Фамилия 10",
-// 		age: 23
+// 		age: 23,
 // 	},
 // ];
-// arr = arr.filter(function(element) {return element.age >= 18;});
-// arr.map(function(element) {return element.fullName = element.firstName + " " + element.lastName;});
-// arr = arr.map(function(element) {return element.fullName;});
+// arr = arr.filter(function (element) {
+// 	return element.age >= 18;
+// });
+// arr = arr.map(function (element) {
+// 	const obj = {
+// 		...element,
+// 		fullName: element.firstName + " " + element.lastName,
+// 	};
+// 	return obj;
+// });
+// arr = arr.map(function (element) {
+// 	return element.fullName;
+// });
 // console.log(arr);
+
 
 
 // // Задача № 4
@@ -144,8 +156,10 @@
 
 // // Задача № 8
 // function createTimer() {
-// 	let time = performance.now();
-// 	return function timer() {
+// 	let time1 = performance.now();
+// 	return function times() {
+// 		let time2 = performance.now();
+// 		let time = time2 - time1;
 // 		return time;
 // 	};
 // }
