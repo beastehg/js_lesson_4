@@ -156,18 +156,14 @@
 
 // // Задача № 8
 // function createTimer() {
-// 	let time1 = performance.now();
-// 	return function times() {
-// 		let time2 = performance.now();
-// 		let time = time2 - time1;
-// 		return time;
+// 	return function () {
+// 		return performance.now();
 // 	};
 // }
 
 // let timer = createTimer();
 // alert("!");
 // alert(timer());
-
 
 
 // // Задача № 9
