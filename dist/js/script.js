@@ -154,16 +154,20 @@
 
 
 
-// // Задача № 8
-// function createTimer() {
-// 	return function () {
-// 		return performance.now();
-// 	};
-// }
+// Задача № 8
+function createTimer() {
+	let timeOne = performance.now();
+	console.time("test");
+	return function () {
+		let timeTwo = performance.now();
+		console.timeEnd("test");
+		return timeTwo - timeOne;
+	};
+}
 
-// let timer = createTimer();
-// alert("!");
-// alert(timer());
+let timer = createTimer();
+alert("!");
+alert(timer());
 
 
 // // Задача № 9
